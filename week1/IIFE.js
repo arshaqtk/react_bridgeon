@@ -40,3 +40,10 @@ const Config = (function() {
 
 console.log(Config.getKey()); // "xyz123"
 console.log(Config.secretKey); // undefined
+
+
+
+(function sqr(){
+  let res=6*6
+  console.log(res)
+})();

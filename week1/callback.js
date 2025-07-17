@@ -9,3 +9,14 @@ function x(y){
 x(function y(){
     console.log("y")
 })
+
+
+function proccessData(num,callback){
+    let res=num*2
+    callback(res)
+     proccessData(5,(value)=>{
+    console.log(value)
+})
+}
+
+

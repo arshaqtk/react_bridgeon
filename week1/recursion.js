@@ -27,14 +27,34 @@ function rev(str){
 
 console.log(rev("arshaq"))
 
-function Numbers(n){
-    if(n<1){
-        return "";
+
+
+function sum(num){
+    if(num<=1){return num}
+   
+    return num+=sum(num-1)
+
+}
+console.log(sum(15))
+
+
+function reverse(str){
+    if(str.length<1){
+        return str
     }
-    let last=n%10;
-    og==n
-     
-    return last.toString()+Numbers(Math.floor(n/10))
+    return str[str.length-1]+reverse(str.slice(0,-1))
 }
 
-console.log(Numbers(1201))
+console.log(reverse("arshaq"))
+
+
+
+function palindrome(str){
+    if(str.length<1){
+        return str;
+    }
+    return str[0]==str[str.length-1]?true:false
+}
+
+console.log(palindrome("madam"))
+console.log(palindrome("adam"))

@@ -4,6 +4,8 @@ function greetUser(name){
 }
 greetUser("Arshaq"); 
 
+
+
 // Add Two Numbers
 function addNumbers(a,b){
     return a+b
@@ -12,6 +14,8 @@ console.log(addNumbers(4, 7))
 
 let isEven=(num)=>num%2==0?true:false
 console.log(isEven(6)) 
+
+
 
 // Count Vowels in a String
 function countVowels(str){
