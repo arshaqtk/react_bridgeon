@@ -101,7 +101,7 @@ const users = { name: "Arshaq", age: 21 };
 intro(users)
 
 
-
+ 
 function myFilter(arr, fn) {
   let result=[]
   for(let i=0;i<arr.length;i++){

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theme Switcher</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    .light {
+      background: white;
+      color: black;
+    }
+    .dark {
+      background: #222;
+      color: white;
+    }
+    .green {
+      background: #06f351;
+      color: black;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+    <p id="themeStatus"></p>
+  <h1>Theme Switcher</h1>
+  <select id="toggleTheme">
+  <option value="light">Light</option>
+  <option value="dark">Dark</option>
+  <option value="green">Green</option>
+</select>
+  <!-- <button id="toggleTheme">Toggle Theme</button>
+  <button id="resetTheme">ResetTheme</button> -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
